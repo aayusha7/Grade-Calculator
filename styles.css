@@ -1,0 +1,126 @@
+/* //change the content position according to the size of the screen */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) {
+  main {
+      display: flex;
+      flex-direction: column-reverse; /* Change the stacking order for smaller screens */
+  }
+
+  .content, .sidebar {
+      width: 100%; /* Make both content and sidebar take full width */
+  }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.body {
+    max-width: 800px;
+    min-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.all{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.label {
+    margin-bottom: 20px;
+}
+
+
+/* Style buttons */
+ button {
+    display:block;
+    background-color: #034f7a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+} 
+ .calculator{
+    margin: 10px;
+    border:1px solid black;
+    width: 50px; 
+    border-spacing: 10px;
+    text-align: center;
+     padding: 10px; 
+     border-bottom: 15px solid transparent;
+      background-color: darkorchid blue; 
+      color: rgb(54, 52, 52);
+       background-clip: padding-box;
+}
+
+
+
+#myTable {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#myTable th, #myTable td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+
+}
+
+#myTable th {
+  background-color: #f2f2f2;
+}
+
+#myTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+ #complete:hover {
+  background-color: #034f7a;
+} 
+
+.hide{
+  display: none;
+}
+
+.tab{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+
+
+.tab-button{
+  margin-right: 15px;
+} 
+
+/* Style the result div */
+#result {
+  display:block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: perspective(500px) rotateX(20deg); /* Add a 3D effect */
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition on hover */
+
+}

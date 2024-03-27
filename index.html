@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>GPA calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="tab">
+        <button onclick="showTabs('add')" class="tab-button">Add classes</button>
+        <button onclick="showTabs('courseView')"  class="tab-button"> View your courses</button>
+        
+    </div>
+
+
+
+    <div class="all">
+        
+            <div  id="add"
+            
+            >
+            <h2 class="title">Add Classes</h2>
+            <form action="" id="classes">
+    
+                <div class="label">
+                    <label>
+                        <p>Course</p>
+                        <input type="text" id="course" name="course" value=""  requires>
+                    </label>
+                </div>
+                <div class="label">
+                    <label class="label">
+                        <p>Credits</p>
+                        <input type="numbers" id="credits" name="credits" value="" required>
+                    </label>
+                </div>
+                <div class="label">
+                    <label class="label">
+                        <p>Grade</p>
+                        <input type="text" id="grade" name="grade" value="" required>
+                    </label>
+                </div>
+    
+                <button  onclick="submitForm(event)" type="button">Add to course</button>
+    
+    
+            </form> 
+        </div>
+       
+      
+
+
+    <div class="calculator body" id="calculator">
+        <div class="tab">
+        <!-- <button onclick="clearToDo()"  class="tab-button"> Clear</button> -->
+        <button onclick="calculateGrade(event)" class="tab-button"> Calculate</button>
+        </div>
+        <table id="myTable">
+            <tr>
+                <th>Course</th>
+                <th>Credits</th>
+                <th>Grade</th>
+                <th id="total" class="total">Total</th>
+              </tr>
+              
+        </table>
+       
+
+
+
+    </div>
+    <div id="result" class="result">
+
+    </div>
+    
+</div>
+    </body>
+
+    <script type="text/javascript" src="script.js"></script>
+
+   
+</body>
+
+</html>
